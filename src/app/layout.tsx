@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { PublicHeader } from "@/components/public-header";
 import { PublicFooter } from "@/components/public-footer";
 
-const cairo = Cairo({ 
+const cairo = Cairo({
   subsets: ["latin", "arabic"],
   variable: "--font-cairo"
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl">
+    <html lang="ar" dir="rtl" suppressHydrationWarning>
       <body className={`${cairo.variable} font-sans antialiased flex flex-col min-h-screen`}>
         <AuthProvider>
           <PublicHeader />

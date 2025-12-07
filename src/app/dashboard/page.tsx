@@ -14,14 +14,14 @@ export default function DashboardPage() {
   ];
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 sm:space-y-8">
       <div>
-        <h1 className="text-3xl font-bold text-gray-900">لوحة التحكم</h1>
-        <p className="text-gray-600 mt-2">مرحباً بك في لوحة التحكم الخاصة بتطبيق Azhar Breast Awareness</p>
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">لوحة التحكم</h1>
+        <p className="text-gray-600 mt-2 text-sm sm:text-base">مرحباً بك في لوحة التحكم الخاصة بتطبيق Azhar Breast Awareness</p>
       </div>
 
       {/* Stats Grid */}
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {stats.map((stat) => (
           <Card key={stat.name}>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
@@ -42,21 +42,21 @@ export default function DashboardPage() {
       {/* Quick Actions */}
       <Card>
         <CardHeader>
-          <CardTitle>إجراءات سريعة</CardTitle>
-          <CardDescription>
+          <CardTitle className="text-lg sm:text-xl">إجراءات سريعة</CardTitle>
+          <CardDescription className="text-sm">
             ابدأ بإدارة محتوى التطبيق من القائمة الجانبية
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
             <div className="p-4 border rounded-lg hover:bg-gray-50 transition-colors cursor-pointer">
               <FileText className="h-8 w-8 text-pink-600 mb-2" />
-              <h3 className="font-semibold mb-1">إدارة المقالات</h3>
+              <h3 className="font-semibold mb-1 text-base">إدارة المقالات</h3>
               <p className="text-sm text-gray-600">إضافة وتعديل المقالات التوعوية</p>
             </div>
             <div className="p-4 border rounded-lg hover:bg-gray-50 transition-colors cursor-pointer">
               <Bell className="h-8 w-8 text-pink-600 mb-2" />
-              <h3 className="font-semibold mb-1">قوالب التذكير</h3>
+              <h3 className="font-semibold mb-1 text-base">قوالب التذكير</h3>
               <p className="text-sm text-gray-600">إنشاء وتعديل قوالب التذكير</p>
             </div>
           </div>

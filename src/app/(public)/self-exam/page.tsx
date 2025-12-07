@@ -35,26 +35,26 @@ export default function SelfExamLandingPage() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-24 min-h-screen">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold text-pink-600 mb-6">الكشف المبكر حياة</h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24 min-h-screen">
+      <div className="text-center mb-12 sm:mb-16">
+        <h1 className="text-3xl sm:text-4xl font-bold text-pink-600 mb-4 sm:mb-6">الكشف المبكر حياة</h1>
+        <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2">
           يعتبر الكشف المبكر عن سرطان الثدي حجر الزاوية في زيادة فرص الشفاء التام.
           نقدم لك هنا دليلاً شاملاً يساعدك في الحفاظ على صحتك.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
         {sections.map((section) => (
           <Card key={section.href} className="hover:shadow-xl transition-shadow border-t-4 border-t-pink-500">
             <CardHeader className="text-center pb-2">
-              <div className={`w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center ${section.color}`}>
-                <section.icon className="h-8 w-8" />
+              <div className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full mx-auto mb-4 flex items-center justify-center ${section.color}`}>
+                <section.icon className="h-7 w-7 sm:h-8 sm:w-8" />
               </div>
-              <CardTitle className="text-2xl mb-2">{section.title}</CardTitle>
+              <CardTitle className="text-xl sm:text-2xl mb-2">{section.title}</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="text-gray-600 mb-6 min-h-[80px]">{section.description}</p>
+              <p className="text-sm sm:text-base text-gray-600 mb-6 min-h-[80px] leading-relaxed">{section.description}</p>
               <Button asChild className="w-full group">
                 <Link href={section.href}>
                   التفاصيل

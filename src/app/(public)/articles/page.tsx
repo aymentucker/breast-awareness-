@@ -18,7 +18,7 @@ async function getArticles() {
   // but preferably use Admin SDK for server components. For simplicity/speed here, we use the existing client SDK setup
   // which works in Next.js server components as long as we don't need auth context.
   // Ideally, move db logic to a comprehensive service.
-  
+
   try {
     const q = query(
       collection(db, 'articles'),
@@ -41,21 +41,21 @@ export default async function ArticlesPage() {
   const articles = await getArticles();
 
   return (
-    <div className="container mx-auto px-4 py-24 min-h-screen">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold text-pink-600 mb-4">المقالات التوعوية</h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24 min-h-screen">
+      <div className="text-center mb-12 sm:mb-16">
+        <h1 className="text-3xl sm:text-4xl font-bold text-pink-600 mb-3 sm:mb-4">المقالات التوعوية</h1>
+        <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-2">
           اكتشفي المزيد عن صحة الثدي، طرق الوقاية، وأهمية الكشف المبكر من خلال مقالاتنا المتخصصة.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {articles.map((article) => (
           <Card key={article.id} className="hover:shadow-lg transition-shadow overflow-hidden flex flex-col h-full">
             {article.media_url && article.media_type === 'image' && (
-              <div className="h-48 overflow-hidden relative">
-                <img 
-                  src={article.media_url} 
+              <div className="h-40 sm:h-48 overflow-hidden relative">
+                <img
+                  src={article.media_url}
                   alt={article.title_ar}
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
                 />
@@ -68,7 +68,7 @@ export default async function ArticlesPage() {
                   {article.media_type === 'video' ? 'فيديو' : 'مقال'}
                 </Badge>
               </div>
-              <CardTitle className="text-xl line-clamp-2 leading-relaxed">
+              <CardTitle className="text-lg sm:text-xl line-clamp-2 leading-relaxed">
                 {article.title_ar}
               </CardTitle>
             </CardHeader>

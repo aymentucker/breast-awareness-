@@ -27,20 +27,19 @@ export function PublicHeader() {
 
   return (
     <header className="fixed top-0 w-full border-b bg-white/95 backdrop-blur z-50">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="font-bold text-2xl text-pink-600">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <Link href="/" className="font-bold text-xl sm:text-2xl text-pink-600">
           أزهــر
         </Link>
-        
+
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6 items-center">
+        <nav className="hidden md:flex gap-4 lg:gap-6 items-center">
           {links.map((link) => (
-            <Link 
+            <Link
               key={link.href}
-              href={link.href} 
-              className={`text-sm font-medium transition-colors hover:text-pink-600 ${
-                pathname === link.href ? 'text-pink-600' : 'text-gray-600'
-              }`}
+              href={link.href}
+              className={`text-sm font-medium transition-colors hover:text-pink-600 ${pathname === link.href ? 'text-pink-600' : 'text-gray-600'
+                }`}
             >
               {link.label}
             </Link>
@@ -57,16 +56,15 @@ export function PublicHeader() {
               <Menu className="h-6 w-6" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="right">
+          <SheetContent side="right" className="w-[280px] sm:w-[350px]">
             <div className="flex flex-col gap-4 mt-8">
               {links.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`text-lg font-medium ${
-                    pathname === link.href ? 'text-pink-600' : 'text-gray-600'
-                  }`}
+                  className={`text-lg font-medium ${pathname === link.href ? 'text-pink-600' : 'text-gray-600'
+                    }`}
                 >
                   {link.label}
                 </Link>

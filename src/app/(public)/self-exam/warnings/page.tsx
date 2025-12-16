@@ -6,7 +6,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { AlertCircle, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'العلامات التحذيرية | Azhar Breast Awareness',
+  title: 'العلامات التحذيرية | طمانينة - التوعية بسرطان الثدي',
   description: 'دليل للتمييز بين التغيرات الطبيعية والعلامات التحذيرية للثدي التي تستدعي استشارة الطبيب.',
 };
 

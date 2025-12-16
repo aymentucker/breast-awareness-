@@ -100,7 +100,7 @@ export default function DashboardLayout({
               <div className="flex items-center gap-2">
                 <Heart className="h-8 w-8 text-pink-600" />
                 <div>
-                  <h1 className="text-xl font-bold text-pink-900">Azhar</h1>
+                  <h1 className="text-xl font-bold text-pink-900">طمانينة</h1>
                   <p className="text-sm text-gray-600">لوحة التحكم</p>
                 </div>
               </div>

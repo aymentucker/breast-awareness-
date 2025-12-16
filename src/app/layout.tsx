@@ -12,7 +12,7 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
-  title: "Azhar Breast Awareness | التوعية بسرطان الثدي",
+  title: "طمانينة - التوعية بسرطان الثدي",
   description: "تطبيق شامل للتوعية بسرطان الثدي والكشف المبكر - Comprehensive breast cancer awareness and early detection app",
 };
 

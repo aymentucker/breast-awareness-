@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const description = (article.body_ar || '').substring(0, 160) + '...';
 
   return {
-    title: `${article.title_ar} | Azhar Breast Awareness`,
+    title: `${article.title_ar} | طمانينة - التوعية بسرطان الثدي`,
     description: description,
     openGraph: {
       title: article.title_ar,

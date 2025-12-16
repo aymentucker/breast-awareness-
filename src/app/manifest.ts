@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Azhar Breast Awareness',
-    short_name: 'Azhar',
+    name: 'طمانينة - التوعية بسرطان الثدي',
+    short_name: 'طمانينة',
     description: 'تطبيق شامل للتوعية بسرطان الثدي والكشف المبكر',
     start_url: '/',
     display: 'standalone',

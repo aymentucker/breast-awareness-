@@ -9,7 +9,7 @@ import { Calendar, Video, Image as ImageIcon } from 'lucide-react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'المقالات التوعوية | Azhar Breast Awareness',
+  title: 'المقالات التوعوية | طمانينة - التوعية بسرطان الثدي',
   description: 'مكتبة شاملة من المقالات التوعوية حول صحة الثدي والكشف المبكر والوقاية.',
 };
 

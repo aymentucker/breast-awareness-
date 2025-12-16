@@ -5,7 +5,7 @@ import { ClipboardList, CalendarClock, AlertTriangle, ArrowLeft } from 'lucide-r
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'الفحص الذاتي والكشف المبكر | Azhar Breast Awareness',
+  title: 'الفحص الذاتي والكشف المبكر | طمانينة - التوعية بسرطان الثدي',
   description: 'تعرفي على أهمية الفحص الذاتي، خطواته، جداول الكشف المبكر، والعلامات التحذيرية.',
 };
 

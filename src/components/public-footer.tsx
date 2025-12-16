@@ -13,7 +13,7 @@ export async function PublicFooter() {
           <div className="col-span-1 sm:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <Heart className="h-6 w-6 text-pink-400" />
-              <h4 className="font-bold text-lg sm:text-xl">Azhar Breast Awareness</h4>
+              <h4 className="font-bold text-lg sm:text-xl">طمانينة - التوعية بسرطان الثدي</h4>
             </div>
             <p className="text-pink-200 max-w-sm leading-relaxed text-sm sm:text-base">
               تطبيق وموقع شامل للتوعية بسرطان الثدي والكشف المبكر. نسعى لنشر الوعي الصحي وتوفير المعلومات الموثوقة لكل امرأة عربية.
@@ -35,12 +35,13 @@ export async function PublicFooter() {
             <ul className="space-y-2 text-pink-200 text-sm sm:text-base">
               <li><Link href="/privacy" className="hover:text-white transition-colors">سياسة الخصوصية</Link></li>
               <li><Link href="/terms" className="hover:text-white transition-colors">الشروط والأحكام</Link></li>
+              <li><Link href="/support" className="hover:text-white transition-colors">الدعم والاتصال</Link></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-pink-800 pt-6 sm:pt-8 text-center text-pink-300 text-xs sm:text-sm flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
-          <p>&copy; {new Date().getFullYear()} Azhar Breast Awareness. جميع الحقوق محفوظة.</p>
+          <p>&copy; {new Date().getFullYear()} طمانينة - التوعية بسرطان الثدي. جميع الحقوق محفوظة.</p>
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center">
             {settings?.contact_email && (
               <a href={`mailto:${settings.contact_email}`} className="hover:text-white transition-colors">

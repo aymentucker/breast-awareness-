@@ -29,7 +29,7 @@ export function PublicHeader() {
     <header className="fixed top-0 w-full border-b bg-white/95 backdrop-blur z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <Link href="/" className="font-bold text-xl sm:text-2xl text-pink-600">
-          أزهــر
+          طمانينة
         </Link>
 
         {/* Desktop Nav */}

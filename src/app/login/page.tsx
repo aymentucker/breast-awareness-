@@ -49,7 +49,7 @@ export default function LoginPage() {
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2 mb-2">
             <Heart className="h-10 w-10 text-pink-600" />
-            <h1 className="text-2xl font-bold text-pink-900">Azhar Breast Awareness</h1>
+            <h1 className="text-2xl font-bold text-pink-900">طمانينة - التوعية بسرطان الثدي</h1>
           </Link>
           <p className="text-gray-600">لوحة التحكم</p>
         </div>

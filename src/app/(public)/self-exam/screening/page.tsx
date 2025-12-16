@@ -7,7 +7,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
 export const metadata: Metadata = {
-  title: 'مواعيد الكشف المبكر | Azhar Breast Awareness',
+  title: 'مواعيد الكشف المبكر | طمانينة - التوعية بسرطان الثدي',
   description: 'جداول وتوصيات الكشف المبكر حسب العمر والجنس للوقاية من سرطان الثدي.',
 };
 

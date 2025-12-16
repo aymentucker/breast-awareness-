@@ -17,7 +17,7 @@ export default function DashboardPage() {
     <div className="space-y-6 sm:space-y-8">
       <div>
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">لوحة التحكم</h1>
-        <p className="text-gray-600 mt-2 text-sm sm:text-base">مرحباً بك في لوحة التحكم الخاصة بتطبيق Azhar Breast Awareness</p>
+        <p className="text-gray-600 mt-2 text-sm sm:text-base">مرحباً بك في لوحة التحكم الخاصة بتطبيق طمانينة</p>
       </div>
 
       {/* Stats Grid */}

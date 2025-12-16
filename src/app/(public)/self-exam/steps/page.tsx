@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Image as ImageIcon, Video } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'خطوات الفحص الذاتي | Azhar Breast Awareness',
+  title: 'خطوات الفحص الذاتي | طمانينة - التوعية بسرطان الثدي',
   description: 'تعلمي كيفية إجراء الفحص الذاتي للثدي خطوة بخطوة بالصور والفيديو.',
 };
 

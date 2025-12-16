@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { getSettings } from '@/lib/get-settings';
 
 export const metadata: Metadata = {
-  title: 'الشروط والأحكام | Azhar Breast Awareness',
-  description: 'الشروط والأحكام لاستخدام تطبيق وموقع أزهر للتوعية بسرطان الثدي.',
+  title: 'الشروط والأحكام | طمانينة - التوعية بسرطان الثدي',
+  description: 'الشروط والأحكام لاستخدام تطبيق وموقع طمانينة للتوعية بسرطان الثدي.',
 };
 
 export default async function TermsPage() {
